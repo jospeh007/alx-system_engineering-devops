@@ -2,10 +2,5 @@
 
 # Display lines containing the word "bash" and filter out the current script itself
 # shellcheck disable=SC2009
-ps -eo pid,cmd | grep bash | grep -v grep | grep -v $$
 
-# Explanation:
-# - `ps -eo pid,cmd`: List all processes with their PID and command.
-# - `grep bash`: Filter out lines containing the word "bash".
-# - `grep -v grep`: Exclude the grep command itself from the output.
-# - `grep -v $$`: Exclude the PID of the script itself.
+ps -aux | grep bash
