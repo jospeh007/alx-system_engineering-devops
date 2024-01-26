@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display header
+echo "PID    PPID   USER       COMMAND"
+
+# Display processes with hierarchy
+ps -eo pid,ppid,user,cmd --forest
