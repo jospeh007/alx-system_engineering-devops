@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Iterate through /proc directory to find processes
+for pid in /proc/[0-9]*; do
+    pid=$(basename "$pid")
+    if [ -f "/proc/$pid/cmdline" ]; then
+        cmd=$(tr '\0' ' ' < "/proc/$pid/cmdline" | grep -o "\<bash\>")
+        if [ -n "$cmd" ]; then
+            echo "PID: $pid, Process Name: $cmd"
+        fi
+    fi
+done
