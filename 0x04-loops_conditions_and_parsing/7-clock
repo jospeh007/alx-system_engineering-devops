@@ -6,7 +6,7 @@ hour=0
 minute=1
 
 #Using a while loop to display time for 12 hours and 59 minutes
-while [ $hour -le 12 ] && [ $minute -le 59 ]
+while [ $hour -lt 12 ] || ([ $hour -eq 12 ] && [ $minute -le 59 ])
 do
 	printf "%02d:%02d\n" $hour $minute
 	((minute++))
