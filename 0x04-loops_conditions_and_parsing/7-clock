@@ -8,10 +8,12 @@ minute=1
 #Using a while loop to display time for 12 hours and 59 minutes
 while [ $hour -le 12 ]
 do
-	printf "%02d:%02d\n" $hour $minute
-	((minute++))
-	if [ $minute -eq 60 ]; then
-		((hour++))
-		minute=0
-	fi
-done | head -n 70
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
+done
