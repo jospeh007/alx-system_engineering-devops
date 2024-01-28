@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Manages the script my_process_manager.
+#   When passed the argument `start`:
+#     1. Initiates my_process_manager
+#     2. Generates a file containing its PID in /var/run/my_process.pid
+#     3. Presents "my_process_manager initiated"
+#   When passed the argument `stop`:
+#     1. Halts my_process_manager
+#     2. Removes the file /var/run/my_process.pid
+#     3. Presents "my_process_manager halted"
+#   When passed the argument `restart`:
+#     1. Halts my_process_manager
+#     2. Removes the file /var/run/my_process.pid
+#     3. Initiates my_process_manager
+#     4. Generates a file containing its PID in /var/run/my_process.pid
+#     5. Presents "my_process_manager rebooted"
+#   If any other or no arguments are passed, presents
+#+  "Usage: my_process_manager {start|stop|restart}"
+
+if [ "${1}" == "start" ]
+then
+    ./my_process_manager &
+    touch /var/run/my_process.pid
+    echo "$!" > /var/run/my_process.pid
+    echo "my_process_manager initiated"
+elif [ "${1}" == "stop" ]
+then
+    echo "my_process_manager halted"
+    kill "$(cat /var/run/my_process.pid)"
+    rm /var/run/my_process.pid
+elif [ "${1}" == "restart" ]
+then
+    kill "$(cat /var/run/my_process.pid)"
+    rm /var/run/my_process.pid
+    ./my_process_manager &
+    touch /var/run/my_process.pid
+    echo "$!" > /var/run/my_process.pid
+    echo "my_process_manager rebooted"
+else
+    echo "Usage: my_process_manager {start|stop|restart}"
+fi
