@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Sets up a listener on port 98 for connections on localhost.
+
+nc -l localhost 98
