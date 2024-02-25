@@ -1,3 +1,6 @@
+[![0-simple_web_stack](https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "0-simple_web_stack")](http://https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "0-simple_web_stack")
+
+
 ### Explain some specifics about this infrastructure
 
 - What is a server ?
