@@ -1,3 +1,5 @@
+[![File](Image "File")](https://miro.com/app/board/uXjVOfJwct0=/ "File")
+
 ### Explain some specifics about this infrastructure
 ------------
 - What is a server ?
