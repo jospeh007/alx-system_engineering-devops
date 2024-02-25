@@ -1,5 +1,3 @@
-![](0x09-web_infrastructure_design/0-simple_web_stack.jpg)
-
 ### Explain some specifics about this infrastructure
 ------------
 - What is a server ?
