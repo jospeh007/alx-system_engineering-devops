@@ -1,3 +1,5 @@
+![](https://pandao.github.io/editor.md/examples/images/8.jpg)
+
 ### Explain some specifics about this infrastructure
 ------------
 - What is a server ?
