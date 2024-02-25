@@ -1,4 +1,5 @@
-[![0-simple_web_stack](Google Drive "0-simple_web_stack")](https://https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "0-simple_web_stack")
+[ss](https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "ss")
+
 
 
 ### Explain some specifics about this infrastructure
