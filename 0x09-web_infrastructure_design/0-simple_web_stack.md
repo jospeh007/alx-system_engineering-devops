@@ -1,4 +1,4 @@
-[ss](https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "ss")
+![Alt text](https://drive.google.com/file/d/1_u-QJmDYJe_hmPIcDM5KU692b_AdCxpA/view?usp=drive_link "ss")
 
 
 
