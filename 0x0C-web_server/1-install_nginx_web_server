@@ -14,7 +14,7 @@ sudo ufw allow 'Nginx HTTP'
 
 # Give the user the permission to website files for easy editing
 sudo chown -R "$USER":"$USER" /var/www/html
-sudo chmod -R 755 /var/www
+sudo chmod -R 755 /var/www/html
 
 # Backup the index
 cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
@@ -25,4 +25,4 @@ echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
 # Restart the Nginx Service
 sudo service nginx restart
 
-echo -e "\nCompleted. ✅\n"
+echo -e "\nCompleted.\n"
